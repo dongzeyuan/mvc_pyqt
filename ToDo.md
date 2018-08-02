@@ -63,3 +63,25 @@
 100000 ~ 500000 500원
 500000 이상 1000원
 
+enum market_type
+{
+	TYPE_STOCK,
+	TYPE_ELW,
+	TYPE_ETF,
+	TYPE_ETN,
+} 
+
+
+# 아디디어
+공시 정보 파싱
+52주 최저가, 52주 최고가
+골든크로스
+
+
+void flip = [](const stock& _stock) {
+	 if(alphago.doesAlphagoWantsToBuy(_stock))
+	 	send(BuySignal);
+	  }
+std::vector<stock> stocks;
+prepareStocks(stocks);
+std::for_each(stocks.begin(), stocks.end(), flip);
