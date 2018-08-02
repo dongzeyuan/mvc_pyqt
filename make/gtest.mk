@@ -26,7 +26,7 @@ CXXFLAGS += -g -Wall -Wextra -pthread -std=c++11
 
 # All tests produced by this Makefile.  Remember to add new tests you
 # created to the list.
-TESTS = mid_test TextReader_test
+TESTS = mid_test TextReader_test seller_test
 
 # All Google Test headers.  Usually you shouldn't change this
 # definition.
