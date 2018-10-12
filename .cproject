@@ -147,6 +147,8 @@
                 				
                 <buildCommand>make</buildCommand>
                 				
+                <buildArguments/>
+                				
                 <buildTarget>all</buildTarget>
                 				
                 <stopOnError>true</stopOnError>
@@ -160,6 +162,8 @@
             <target name="clean" path="gtest_make" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
                 				
                 <buildCommand>make</buildCommand>
+                				
+                <buildArguments/>
                 				
                 <buildTarget>clean</buildTarget>
                 				
@@ -175,9 +179,23 @@
                 				
                 <buildCommand>make</buildCommand>
                 				
+                <buildTarget>seller_test</buildTarget>
+                				
+                <stopOnError>true</stopOnError>
+                				
+                <useDefaultCommand>false</useDefaultCommand>
+                				
+                <runAllBuilders>true</runAllBuilders>
+                			
+            </target>
+            			
+            <target name="search_test" path="search" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+                				
+                <buildCommand>make</buildCommand>
+                				
                 <buildArguments/>
                 				
-                <buildTarget>seller_test</buildTarget>
+                <buildTarget>search_test</buildTarget>
                 				
                 <stopOnError>true</stopOnError>
                 				
