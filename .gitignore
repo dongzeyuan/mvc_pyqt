@@ -5,7 +5,9 @@
 *.o
 
 # but do track lib.a, even though you're ignoring .a files above
-!lib.a
+#!lib.a
+#!lib*.a
+!libgtest_main.a
 
 # only ignore the TODO file in the current directory, not subdir/TODO
 /TODO
@@ -19,3 +21,5 @@ doc/*.txt
 # ignore all .pdf files in the doc/ directory
 doc/**/*.pdf
 
+# pyqt
+env
