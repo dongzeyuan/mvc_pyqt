@@ -1,1 +1,4 @@
 __pycache__
+src/ui/ui_dialog.py
+src/ui/ui_mainwindow.py
+src/ui/ui_popup.py
