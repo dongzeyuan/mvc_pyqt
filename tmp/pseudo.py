@@ -52,8 +52,9 @@ class keyProcessor():
     def __init__(self):
         self.s_previous_time = time.time()
         self.s_previous_cmd = [None, None, time.time()]
-    # def setPreviousCmd(self, previous_cmd):
-    #     self.s_previous_key = previous_key
+
+    def setPreviousCmd(self, current_cmd):
+        self.s_previous_key = previous_key
 
     def resetPreviousTime(self):
         self.s_previous_time = time.time()
