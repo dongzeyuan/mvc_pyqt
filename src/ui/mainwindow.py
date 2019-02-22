@@ -1,3 +1,6 @@
+"""
+module docstring
+"""
 import sys
 from PyQt5.QtWidgets import QMainWindow
 
@@ -8,6 +11,9 @@ from ui_dialog import Ui_Dialog
 
 from PyQt5.QtWidgets import QDialog
 
+"""
+class docstring
+"""
 class SufferMainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
@@ -24,6 +30,9 @@ class SufferMainWindow(QMainWindow, Ui_MainWindow):
         self.nd = NewDialog(self)
         self.nd.show()
 
+"""
+class docstring
+"""
 class NewDialog(QDialog):
     def __init__(self, parent):
         super(NewDialog, self).__init__(parent)
@@ -31,7 +40,7 @@ class NewDialog(QDialog):
 
 if __name__ == "__main__":
     from PyQt5.QtWidgets import QApplication
-    app = QApplication(sys.argv)
+    App = QApplication(sys.argv)
     ex = SufferMainWindow()
     ex.show()
-    sys.exit(app.exec_())
+    sys.exit(App.exec_())
