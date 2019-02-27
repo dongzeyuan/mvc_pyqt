@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>310</width>
-    <height>187</height>
+    <width>426</width>
+    <height>341</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -43,12 +43,43 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>310</width>
+     <width>426</width>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menulog">
+    <property name="title">
+     <string>suffer</string>
+    </property>
+    <addaction name="actionShow_Log"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_Suffer"/>
+   </widget>
+   <addaction name="menulog"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout_Suffer">
+   <property name="text">
+    <string>About Suffer..</string>
+   </property>
+  </action>
+  <action name="actionShow_Log">
+   <property name="text">
+    <string>Show Log</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

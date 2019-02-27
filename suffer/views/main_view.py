@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtCore import pyqtSlot
-from views.main_view_ui import Ui_MainWindow
+from views.Ui_main_view import Ui_MainWindow
 
 
 class MainView(QMainWindow):
