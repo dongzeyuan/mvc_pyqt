@@ -1,16 +1,15 @@
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtCore import pyqtSlot
-from views.Ui_main_view import Ui_MainWindow
 from views.Ui_dialog_manual_view import Ui_DialogManual
-from PyQt5 import QtWidgets
 
-class MainView(QMainWindow):
+
+class DialogManual(QDialog):
     def __init__(self, model, main_controller):
         super().__init__()
 
         self._model = model
         self._main_controller = main_controller
-        self._ui = Ui_MainWindow()
+        self._ui = Ui_DialogManual()
         self._ui.setupUi(self)
 
         # connect widgets to controller
@@ -45,7 +44,7 @@ class MainView(QMainWindow):
 
     @pyqtSlot(bool)
     def pushButtonManualClicked(self):
-        self.Dialog = QtWidgets.QDialog()
-        self.ui = Ui_DialogManual()
-        self.ui.setupUi(self.Dialog)
-        self.Dialog.show()
+        Dialog = QtWidgets.QDialog()
+        ui = Ui_DialogManual()
+        ui.setupUi(Dialog)
+        Dialog.show()

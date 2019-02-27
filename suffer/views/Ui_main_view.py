@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/dm8/project/desert/suffer/resources/main_view.ui'
+# Form implementation generated from reading ui file 'd:\DevGim\desert\suffer\resources\main_view.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(426, 341)
+        MainWindow.resize(319, 345)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
@@ -24,13 +24,22 @@ class Ui_MainWindow(object):
         self.label_even_odd = QtWidgets.QLabel(self.centralwidget)
         self.label_even_odd.setObjectName("label_even_odd")
         self.verticalLayout.addWidget(self.label_even_odd)
+        self.pushButton_manual = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_manual.setObjectName("pushButton_manual")
+        self.verticalLayout.addWidget(self.pushButton_manual)
+        self.pushButton_start = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_start.setObjectName("pushButton_start")
+        self.verticalLayout.addWidget(self.pushButton_start)
+        self.pushButton_stop = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_stop.setObjectName("pushButton_stop")
+        self.verticalLayout.addWidget(self.pushButton_stop)
         self.pushButton_reset = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_reset.setObjectName("pushButton_reset")
         self.verticalLayout.addWidget(self.pushButton_reset)
         self.gridLayout.addLayout(self.verticalLayout, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 426, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 319, 22))
         self.menubar.setObjectName("menubar")
         self.menulog = QtWidgets.QMenu(self.menubar)
         self.menulog.setObjectName("menulog")
@@ -60,6 +69,9 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label_even_odd.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_manual.setText(_translate("MainWindow", "Manual"))
+        self.pushButton_start.setText(_translate("MainWindow", "Start"))
+        self.pushButton_stop.setText(_translate("MainWindow", "Stop"))
         self.pushButton_reset.setText(_translate("MainWindow", "PushButton"))
         self.menulog.setTitle(_translate("MainWindow", "suffer"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))

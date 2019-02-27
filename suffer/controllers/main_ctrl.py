@@ -17,3 +17,16 @@ class MainController(QObject):
         # calculate button enabled state
         self._model.enable_reset = True if value else False
 
+    @pyqtSlot()
+    def pushButtonManualClicked(self):
+        print("pushButtonManualClicked")
+
+
+    @pyqtSlot()
+    def pushButtonStartClicked(self):
+        print("pushButtonStartClicked")
+
+    @pyqtSlot()
+    def pushButtonStopClicked(self):
+        print("pushButtonStopClicked")
+
