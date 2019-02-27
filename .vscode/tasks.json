@@ -6,7 +6,7 @@
         {
             "label": "PYTHON3.7.2",
             "type": "shell",
-            "command": "python",
+            "command": "python3",
             "args": [
                 "${file}"
             ],
